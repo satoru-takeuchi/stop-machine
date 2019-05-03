@@ -8,7 +8,7 @@ Here is how to use this module on Ubuntu 18.04 and linux kernel 4.18.0-18-generi
 ```
 $ mkdir -p ~/src
 $ cd ~/src
-$ sudo apt install kernel-package linux-headers-4.18.0-18-generic # if you use other kernel, please replace 4.18-0-18-generic to other kernel version
+$ sudo apt install kernel-package linux-headers-$(uname -r)
 $ git clone https://github.com/satoru-takeuchi/stop-machine.git
 $ cd ~/src/stop-machine
 $ make
@@ -17,3 +17,8 @@ $
 ```
 
 Then entire system stop one second.
+
+After that, you can uninstall this module like this.
+
+```
+s

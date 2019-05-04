@@ -10,8 +10,9 @@ $ mkdir -p ~/src
 $ cd ~/src
 $ sudo apt install kernel-package linux-headers-$(uname -r)
 $ git clone https://github.com/satoru-takeuchi/stop-machine.git
-$ cd ~/src/stop-machine
+$ cd stop-machine
 $ make
+...
 $ sudo insmod stop-machine.ko
 $ 
 ```

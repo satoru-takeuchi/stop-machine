@@ -6,7 +6,7 @@ MODULE_LICENSE("GPL v2");
 MODULE_AUTHOR("Satoru Takeuchi <satoru.takeuchi@gmail.com>");
 MODULE_DESCRIPTION("stop machine temporarily");
 
-#define STOP_MSECS 1000
+#define STOP_MSECS 5000
 
 static int stop_func(void *arg) {
 	mdelay(STOP_MSECS);

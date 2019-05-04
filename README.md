@@ -21,4 +21,5 @@ Then entire system stop one second.
 After that, you can uninstall this module like this.
 
 ```
-s
+$ sudo rmmod stop-machine
+```

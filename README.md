@@ -3,12 +3,12 @@ A kernel module which stop system temporarily
 
 # usage
 
-Here is how to use this module on Ubuntu 18.04 and linux kernel 4.18.0-18-generic environment.
+Here is how to use this module on Ubuntu 22.04 and linux kernel 5.15.0-107-generic environment.
 
 ```
 $ mkdir -p ~/src
 $ cd ~/src
-$ sudo apt install kernel-package linux-headers-$(uname -r)
+$ sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev linux-headers-$(uname -r)
 $ git clone https://github.com/satoru-takeuchi/stop-machine.git
 $ cd stop-machine
 $ make

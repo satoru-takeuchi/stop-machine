@@ -1,8 +1,9 @@
 .PHONY: all clean
 
-SRCDIR := /lib/modules/4.18.0-18-generic/build
+KERNEL_VERSION := 5.15.0-107-generic
+SRCDIR := /lib/modules/$(KERNEL_VERSION)/build
 
-obj-m := stop-machine.o
+obj-m += stop-machine.o
 
 all:
 	make -C $(SRCDIR) M=$(PWD) modules
